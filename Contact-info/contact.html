@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Us">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            background-image: url('adback.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: #333;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            gap: 50px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .navbar a.active {
+        color: #a1c4fd; 
+        }
+        .navbar a:hover {
+            color: #a1c4fd;
+        }
+
+        .banner {
+            margin-top: 70px; /* To adjust for the fixed navbar */
+            background: linear-gradient(to bottom, #a1c4fd, #c2e9fb);
+            padding: 20px;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: center;
+            width: 800px;
+            height: 450px;
+            text-align: left;
+            border: 1px solid #999;
+            border-radius: 20px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .image-container {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .image-container img {
+            max-width: 90%;
+            height: auto;
+            border-radius: 30px;
+        }
+
+        .text-container {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .text-container h2 {
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: black;
+        }
+
+        .text-container p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .contact-info {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        .contact-info strong {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .social-links {
+            margin-top: 15px;
+        }
+
+        .social-links a {
+            margin: 0 5px;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .banner {
+                flex-direction: column;
+                width: 90%;
+                text-align: center;
+            }
+
+            .text-container {
+                padding-right: 0;
+                padding-bottom: 10px;
+            }
+
+            .text-container h2 {
+                font-size: 22px;
+            }
+
+            .text-container p,
+            .contact-info {
+                font-size: 14px;
+            }
+
+            .image-container {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="http://localhost/online-products/index.html">Home</a>
+        <a href="http://localhost/online-products/shopnow/shop.php">Shop Now</a>
+        <a href="http://localhost/online-products/faqs/faqs.html">FAQs</a>
+        <a href="#" class="active">Contact Us</a>
+    </div>
+
+    <div class="banner">
+        <div class="image-container">
+            <img src="papipic.jpg">
+        </div>
+        <div class="text-container">
+            <h2>Contact Us</h2>
+            <p>We’d love to hear from you! Whether you have questions about our products, need assistance, or just want to share your pet stories, feel free to reach out.</p>
+            <div class="contact-info">
+                <p><strong><i class="fas fa-envelope"></i> Email:</strong> Roselyncayetano080@gmail.com</p>
+                <p><strong><i class="fas fa-phone"></i> Phone:</strong> 09924156175</p>
+                <p><strong><i class="fas fa-map-marker-alt"></i> Address:</strong> Block 46 Lot 43 Phase 6-G Towerville Brgy, Gaya-gaya CSJDMB</p>
+                <p><strong>Business Hours:</strong></p>
+                <p>Monday to Sunday: 5:00am to 9:00pm</p>
+            </div>
+            <div class="social-links">
+                <p><strong>Follow Us:</strong></p>
+                <a href="https://www.facebook.com/PapiandPrincePetSupply">Facebook</a> |
+                <a href="https://www.tiktok.com/@papiandprince?_t=ZS-8rnXS1t2Hw5&_r=1&fbclid=IwY2xjawG2nc1leHRuA2FlbQIxMAABHVKLc8mCobvG9wbK8cr2NHIrww7KbX_hk8VWh7TL47aKEOI0CaKLrgBACQ_aem_epKo69cU9WAbl0EgZmZ_vw">Tiktok</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
